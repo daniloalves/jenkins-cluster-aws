@@ -11,14 +11,13 @@
             "instance_type" : "t2.micro",
             "source_ami" : "{{user `source_ami`}}",
             "ssh_username" : "ec2-user",
-            "ami_name" : "jenkins-master-prod",
+            "ami_name" : "jenkins-master",
             "ami_description" : "Jenkins Server",
             "run_tags" : {
                 "Name" : "packer-builder-docker"
             },
             "tags" : {
-                "Tool" : "Packer",
-                "Author" : "mlabouardy"
+                "Tool" : "Packer"
             }
         }
     ],
